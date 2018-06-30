@@ -6,6 +6,7 @@ import {
   Text,
   View
 } from 'react-native';
+import GaugeExample from './src/components/GaugeExample';
 
 
 export default class App extends Component {
@@ -13,9 +14,10 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          SpeedoMeter
+          Charts
         </Text>
-        <AreaChartExample />
+        {/* <AreaChartExample /> */}
+        <GaugeExample />
       </View>
     );
   }

@@ -27,6 +27,7 @@ export default class BarChartExample extends PureComponent {
           formatLabel = {(value, index) => index}
           labelStyle = {{color: 'black'}}
         />
+        
       </View>
     );
   }

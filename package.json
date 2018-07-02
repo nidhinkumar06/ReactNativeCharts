@@ -15,7 +15,8 @@
     "date-fns": "^1.29.0",
     "react": "16.3.1",
     "react-native": "0.55.4",
-    "react-native-svg": "^6.3.1"
+    "react-native-svg": "^6.3.1",
+    "react-native-svg-charts": "^5.2.0"
   },
   "devDependencies": {
     "babel-jest": "23.2.0",

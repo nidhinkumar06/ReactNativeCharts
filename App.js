@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import AreaChartExample from './src/components/AreaChartExample';
+import Gauge from './src/components/Gauge-chart';
+// import AreaChartExample from './src/components/AreaChartExample';
+// import BarChartExample from './src/components/BarChartExample';
+// import YAxisExample from './src/components/Yaxis-example';
 import {
-  Platform,
   StyleSheet,
   Text,
   View
@@ -12,13 +14,25 @@ import GaugeExample from './src/components/GaugeExample';
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Charts
-        </Text>
-        {/* <AreaChartExample /> */}
-        <GaugeExample />
+      // <View style={styles.container}>
+      //   <Text style={styles.welcome}>
+      //     AreaChartExample
+      //   </Text>
+      // //   {/* <Text style={styles.welcome}>
+      // //     BarChartExample
+      // //   </Text>
+      // //   <BarChartExample /> */}
+      //   </View>
+      <View style = {styles.container}>
+        <Text style={styles.welcome}>AreaChart</Text>
+              <Gauge  currentValue = {200} />
+          {/* <AreaChartExample /> */}
+          {/* <BarChartExample/> */}
+         {/* <Text style={styles.welcome}>BarChart</Text> */}
+         {/* <YAxisExample /> */}
+
       </View>
+
     );
   }
 }
@@ -34,10 +48,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
